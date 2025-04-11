@@ -1,0 +1,30 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: security-admin
+rules:
+- apiGroups: [ "" ]
+  resources: [ "secrets", "pods", "pods/log" ]
+  verbs: [ "get", "list", "watch" ]
+- apiGroups: [ "audit.k8s.io" ]
+  resources: [ "*" ]
+  verbs: [ "*" ]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: devops-engineer
+rules:
+- apiGroups: [ "", "apps", "extensions" ]
+  resources: [ "deployments", "services", "configmaps", "pods" ]
+  verbs: [ "get", "list", "watch", "create", "update", "patch", "delete" ]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: developer
+  namespace: prod
+rules:
+- apiGroups: [ "", "apps" ]
+  resources: [ "pods", "pods/log", "deployments", "services" ]
+  verbs: [ "get", "list", "watch" ]

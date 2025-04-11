@@ -1,0 +1,76 @@
+<mxfile host="65bd71144e">
+    <diagram name="Mindmap безопасности данных" id="AA9cZ-glA_Fp__WyKTjR">
+        <mxGraphModel dx="534" dy="449" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="public" value="Публичные данные" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="64" y="160" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="public_content" value="• Информация об объектах недвижимости&#xa;• Общая информация о компании&#xa;• Публичные тарифы ЖКХ&#xa;• Новости и объявления" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12" parent="1" vertex="1">
+                    <mxGeometry x="64" y="210" width="176" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="public_risks" value="Риски:&#xa;• Утечка данных 🟢&#xa;• Потеря данных 🟡&#xa;• Искажение данных 🔴&#xa;• Некачественные данные 🔴&#xa;• Обесценивание данных 🟡" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12" parent="1" vertex="1">
+                    <mxGeometry x="64" y="300" width="176" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="public_justification" value="Обоснование:&#xa;• Данные предназначены для публичного доступа&#xa;• Потеря влияет на репутацию&#xa;• Искажение может привести к юридическим проблемам&#xa;• Качество влияет на решения клиентов&#xa;• Устаревшие данные могут привести к неверным решениям" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10" parent="1" vertex="1">
+                    <mxGeometry x="64" y="410" width="176" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="internal" value="Внутренние данные" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="244" y="160" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="internal_content" value="• Данные о сотрудниках&#xa;• Внутренние процедуры&#xa;• Статистика работы&#xa;• Техническая документация&#xa;• Логи систем" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12" parent="1" vertex="1">
+                    <mxGeometry x="244" y="210" width="166" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="internal_risks" value="Риски:&#xa;• Утечка данных 🟡&#xa;• Потеря данных 🔴&#xa;• Искажение данных 🔴&#xa;• Некачественные данные 🔴&#xa;• Обесценивание данных 🟡" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12" parent="1" vertex="1">
+                    <mxGeometry x="244" y="300" width="176" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="internal_justification" value="Обоснование:&#xa;• Утечка может дать преимущество конкурентам&#xa;• Потеря нарушает работу компании&#xa;• Искажение влияет на управленческие решения&#xa;• Качество влияет на эффективность&#xa;• Устаревшие данные снижают эффективность" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10" parent="1" vertex="1">
+                    <mxGeometry x="244" y="420" width="176" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="confidential" value="Конфиденциальные данные" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="424" y="160" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="confidential_content" value="• Персональные данные клиентов&#xa;• Данные о платежах&#xa;• История взаимодействия&#xa;• Данные о сделках&#xa;• Данные о собственности&#xa;• Данные о задолженностях" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12" parent="1" vertex="1">
+                    <mxGeometry x="424" y="210" width="176" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="confidential_risks" value="Риски:&#xa;• Утечка данных 🔴&#xa;• Потеря данных 🔴&#xa;• Искажение данных 🔴&#xa;• Некачественные данные 🔴&#xa;• Обесценивание данных 🟡" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12" parent="1" vertex="1">
+                    <mxGeometry x="424" y="300" width="176" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="confidential_justification" value="Обоснование:&#xa;• Утечка нарушает законодательство&#xa;• Потеря влияет на работу с клиентами&#xa;• Искажение приводит к ошибкам в расчетах&#xa;• Качество влияет на обслуживание&#xa;• Устаревшие данные приводят к ошибкам" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10" parent="1" vertex="1">
+                    <mxGeometry x="424" y="410" width="176" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="secret" value="Секретные данные" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="604" y="160" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="secret_content" value="• Ключи доступа&#xa;• Криптографические ключи&#xa;• Данные аутентификации&#xa;• Конфигурационные файлы&#xa;• Данные расследований&#xa;• Данные безопасности" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12" parent="1" vertex="1">
+                    <mxGeometry x="604" y="210" width="176" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="secret_risks" value="Риски:&#xa;• Утечка данных 🔴&#xa;• Потеря данных 🔴&#xa;• Искажение данных 🔴&#xa;• Некачественные данные 🔴&#xa;• Обесценивание данных 🔴" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12" parent="1" vertex="1">
+                    <mxGeometry x="604" y="300" width="186" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="secret_justification" value="Обоснование:&#xa;• Утечка компрометирует всю систему&#xa;• Потеря блокирует доступ к системам&#xa;• Искажение нарушает работу систем&#xa;• Качество влияет на безопасность&#xa;• Устаревшие данные создают уязвимости" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10" parent="1" vertex="1">
+                    <mxGeometry x="604" y="410" width="176" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" style="edgeStyle=none;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="3" target="public">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="3" target="internal">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" style="edgeStyle=none;html=1;exitX=0.605;exitY=1.002;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" edge="1" parent="1" source="3" target="confidential">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-size: 20px;&quot;&gt;Безопасность данных&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="130" y="60" width="530" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" style="edgeStyle=none;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.682;entryY=0.089;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="3" target="secret">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Легенда&lt;/h1&gt;&lt;p style=&quot;line-height: 30%;&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;&lt;font style=&quot;font-size: 11px; line-height: 30%;&quot;&gt;🟢 - незначительный риск&lt;/font&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 30%;&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); background-color: transparent;&quot;&gt;&lt;font style=&quot;font-size: 11px; line-height: 30%;&quot;&gt;🟡 - значительный риск&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height: 30%;&quot;&gt;&lt;font style=&quot;font-size: 11px; line-height: 30%;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: rgb(0, 0, 0);&quot;&gt;🔴&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: rgb(0, 0, 0);&quot;&gt;&amp;nbsp;- критический риск&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;strokeColor=default;perimeterSpacing=1;spacingTop=2;spacingLeft=9;spacingRight=1;" vertex="1" parent="1">
+                    <mxGeometry x="800" y="40" width="180" height="110" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

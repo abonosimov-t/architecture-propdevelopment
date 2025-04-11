@@ -1,0 +1,79 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: front-end
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: front-end
+      role: frontend
+  template:
+    metadata:
+      labels:
+        app: front-end
+        role: frontend
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:latest
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: back-end-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: back-end-api
+      role: backend
+  template:
+    metadata:
+      labels:
+        app: back-end-api
+        role: backend
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:latest
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: admin-front-end
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: admin-front-end
+      role: admin-frontend
+  template:
+    metadata:
+      labels:
+        app: admin-front-end
+        role: admin-frontend
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:latest
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: admin-back-end-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: admin-back-end-api
+      role: admin-backend
+  template:
+    metadata:
+      labels:
+        app: admin-back-end-api
+        role: admin-backend
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:latest

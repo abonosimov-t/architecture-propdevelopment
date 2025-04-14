@@ -1,0 +1,50 @@
+<mxfile host="65bd71144e">
+    <diagram name="Context Diagram" id="c4_context">
+        <mxGraphModel dx="668" dy="1319" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" value="Диаграмма контекста PropDevelopment: Умный дом&#xa;[System Context Diagram]" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="179" y="-40" width="810" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="system" value="PropDevelopment&#xa;Система управления&#xa;умным домом&#xa;[Software System]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1168bd;strokeColor=#0e5ba1;fontColor=#ffffff;fontSize=16;verticalAlign=top;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="434" y="310" width="300" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="smart_home" value="Партнерская платформа&#xa;умного дома&#xa;[Software System]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#999999;strokeColor=#8a8a8a;fontColor=#ffffff;fontSize=16;verticalAlign=top;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="435" y="520" width="300" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="devices" value="Умные устройства&#xa;(домофон, шлагбаум)&#xa;[Hardware]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#999999;strokeColor=#8a8a8a;fontColor=#ffffff;fontSize=16;verticalAlign=top;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="860" y="520" width="200" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="biometrics" value="Система биометрии&#xa;[Software System]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#999999;strokeColor=#8a8a8a;fontColor=#ffffff;fontSize=16;verticalAlign=top;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="100" y="520" width="300" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="rel1" value="Использует мобильное&#xa;приложение для&#xa;управления доступом" style="endArrow=classic;html=1;fontSize=12;" parent="1" source="2" target="system" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="527.6190476190475" y="180" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="rel2" value="Отправляет команды&#xa;управления через API" style="endArrow=classic;html=1;fontSize=12;" parent="1" source="system" target="smart_home" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rel3" value="Управляет" style="endArrow=classic;html=1;fontSize=12;" parent="1" source="smart_home" target="devices" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rel4" value="Проверяет&#xa;биометрические&#xa;данные" style="endArrow=classic;html=1;fontSize=12;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="system" target="biometrics" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="" style="endArrow=classic;html=1;fontSize=12;" edge="1" parent="1" target="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="527.6190476190475" y="180" as="sourcePoint"/>
+                        <mxPoint x="563" y="280" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <object placeholders="1" c4Name="Собственник" c4Type="Person" c4Description="" label="%c4Name%&lt;br&gt;[%c4Type%]&lt;br&gt;&lt;br&gt;%c4Description%" id="2">
+                    <mxCell style="fontSize=19;dashed=0;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#FFFFFF;shape=mxgraph.c4.person2;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0]];resizable=0;html=1;" vertex="1" parent="1">
+                        <mxGeometry x="485" y="10" width="200" height="180" as="geometry"/>
+                    </mxCell>
+                </object>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

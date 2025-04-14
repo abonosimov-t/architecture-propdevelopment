@@ -1,0 +1,87 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: frontend-backend-policy
+spec:
+  podSelector:
+    matchLabels:
+      role: frontend
+  policyTypes:
+  - Ingress
+  - Egress
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          role: backend
+  egress:
+  - to:
+    - podSelector:
+        matchLabels:
+          role: backend
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: backend-frontend-policy
+spec:
+  podSelector:
+    matchLabels:
+      role: backend
+  policyTypes:
+  - Ingress
+  - Egress
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          role: frontend
+  egress:
+  - to:
+    - podSelector:
+        matchLabels:
+          role: frontend
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: admin-frontend-backend-policy
+spec:
+  podSelector:
+    matchLabels:
+      role: admin-frontend
+  policyTypes:
+  - Ingress
+  - Egress
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          role: admin-backend
+  egress:
+  - to:
+    - podSelector:
+        matchLabels:
+          role: admin-backend
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: admin-backend-frontend-policy
+spec:
+  podSelector:
+    matchLabels:
+      role: admin-backend
+  policyTypes:
+  - Ingress
+  - Egress
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          role: admin-frontend
+  egress:
+  - to:
+    - podSelector:
+        matchLabels:
+          role: admin-frontend
